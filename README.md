@@ -1,6 +1,8 @@
-# AirTank - Coding project for prospective front-end developers
+# Coding project for prospective front-end developers
 
-The front-end team at AirTank would like to get a better picture of your coding and problem solving skills. To do that, we would like for you to create a single web page. Keep the following in mind:
+### I developed this exercise to tease out the coding proficiency and architectural thinking of front-end developer candidates
+
+The front-end team would like to get a better picture of your coding and problem solving skills. To do that, we would like for you to create a single web page. Keep the following in mind:
 
 - Your future peers will be reviewing your submission, so write it appropriately and follow best practices. 
 - We've given a lot of latitude on design decisions. However, our primary focus of the evaluation will be your code.

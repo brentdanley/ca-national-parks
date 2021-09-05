@@ -7,7 +7,6 @@ const Hero = () => (
         <Image 
             src={ YosemitePic }
             alt='Yosemite by Aniket Deole'
-            className={styles.background}
             layout='responsive'
             priority='true'
             placeholder='blur'

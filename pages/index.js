@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <Head>
-        <title>AirTank interview project - Brent Danley</title>
+        <title>Interview project - Brent Danley</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
