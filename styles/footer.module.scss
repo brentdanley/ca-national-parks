@@ -52,6 +52,21 @@
 
             li {
                 list-style: none;
+                margin: 0.5em 0;
+
+                a {
+                    display: flex;
+                    gap: 0.5em;
+                    justify-content: flex-end;
+
+                    @media only screen and (max-width: $mobile-breakpoint) {
+                        justify-content: center;
+                    }
+                }
+
+                svg {
+                    width: 1.2em;
+                }
             }
         }
 
