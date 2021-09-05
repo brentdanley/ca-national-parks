@@ -2,13 +2,13 @@
 
 .cards {
     background: var(--dark-primary-color);
-    padding: 2em;
+    padding: 0.5em;
 
     .contentWrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
-        width: 90%;
+        width: 100%;
         max-width: 1400px;
         margin: 0 auto;
     }
