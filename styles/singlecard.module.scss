@@ -69,6 +69,7 @@
         font-size: 1.4rem;
         text-shadow: 0 0 0.3em var(--light-primary-color);
         transition: color 500ms;
+        margin-bottom: 0;
         
         &::after {
             content: '';
@@ -78,6 +79,54 @@
             background: var(--light-primary-color);
             transform: translateX(-120%);
             transition: transform 1s;
+        }
+    }
+
+    .description {
+        margin-top: 0;
+    }
+
+    .coords {
+        display: flex;
+        gap: 0.5em;
+
+        svg {
+            height: 1em;
+        }
+    }
+
+    .activities {
+        
+        .title {
+            font-size: 1.3rem;
+            margin: 0.5em 0;
+        }
+
+        .activityList {
+            margin: 0;
+        }
+    }
+
+    .npsLink {
+        background: white;
+        color: var(--dark-primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+        padding: 0.3em 0.7em;
+        width: fit-content;
+        border-radius: 0.7em;
+        transition: 200ms;
+        margin-top: 1em;
+
+        svg {
+            width: 0.6em;
+        }
+
+        &:hover {
+            background: var(--dark-primary-color);
+            color: white;
         }
     }
 }

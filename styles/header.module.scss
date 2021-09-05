@@ -2,6 +2,32 @@
 
 .header {
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
     background: var(--dark-primary-color);
     color: var(--light-primary-color);
+
+    .imageWrapper {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--light-primary-color);
+        border-radius: 50%;
+        overflow: hidden;
+
+        div {
+            height: 100%;
+            width: 100%;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .siteName {
+        font-size: clamp(1.2rem, 3vw, 3rem);
+    }
 }
