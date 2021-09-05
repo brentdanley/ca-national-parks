@@ -1,17 +1,34 @@
 // Sass partial for the footer
 
 .footer {
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-  }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'legal title social' 
+        'copyright title social';
+
+    .pageTitle {
+        grid-area: title;
+    }
+
+    .legalLinks {
+        grid-area: legal;
+    }
+
+    .socialLinks {
+        grid-area: social;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'title title' 'legal social' 'copyright copyright';
+    }
+
+    @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'title' 'legal' 'social' 'copyright';
+    }
 }

@@ -1,5 +1,24 @@
 // Sass partial for the homepage hero
 
 .hero {
-    color: red;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: grid;
+
+    & > div {
+        grid-area: 1/1/-1/-1;
+        z-index: -1;
+    }
+
+    .title {
+        grid-area: 1/1/-1/-1;
+        align-self: center;
+        justify-self: center;
+        color: white;
+        font-size: clamp(2rem, 5vw, 4rem);
+        background: hsla(0, 0%, 0%, 0.4);
+        text-align: center;
+        width:100%;
+        padding: 4%;
+    }
 }

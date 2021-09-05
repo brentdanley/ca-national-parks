@@ -1,2 +1,73 @@
 // Sass partial for single park card
 
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-size: cover;
+    background-position: center bottom;
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: .7em;
+
+    &:hover {
+
+        .contentWrapper {
+            transform: translateY(0);
+        }
+
+        .parkName::after {
+            transform: translateX(-0.7em);
+        }
+    }
+
+    &::before {
+        content: '';
+        background-image: inherit;
+        background-size: inherit;
+        background-position: inherit;
+        filter: blur(0px);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: filter 500ms;
+    }
+
+    &:hover::before {
+        filter: blur(5px);
+    }
+
+    &::after {
+        content: '';
+        background: transparent;
+        position: absolute;
+        mix-blend-mode: multiply;
+        inset: 0;
+        z-index: -1;
+        transition: background 500ms;
+    }
+    
+    &:hover::after {
+        background: hsla(0, 0%, 50%, 1);
+    }
+
+    .contentWrapper {
+        transform: translateY(100%);
+        transition: transform 500ms;
+        color: white;
+    }
+
+    .parkName {
+        
+        &::after {
+            content: '';
+            display: block;
+            height: 6px;
+            margin: 0.5em 0;
+            background: white;
+            transform: translateX(-120%);
+            transition: transform 1s;
+        }
+    }
+}

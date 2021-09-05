@@ -1,9 +1,11 @@
-
+import styles from '../styles/header.module.scss'
 
 const Header = () => {
 
     return (
-        <header><h1>This is a fancy title.</h1></header>
+        <header className={styles.header}>
+            <p>Brent</p>
+        </header>
     )
 }
 
