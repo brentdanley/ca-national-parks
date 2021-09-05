@@ -2,66 +2,75 @@
 
 .footer {
     $mobile-breakpoint: 767px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'legal title social' 
-        'copyright title social';
+    background: var(--light-primary-color);
 
-    .pageTitle {
-        grid-area: title;
-        text-align: center;
-    }
+    .contentWrapper {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 'legal title social' 
+            'copyright title social';
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2em;
 
-    .legalLinks {
-        grid-area: legal;
-
-        @media only screen and (max-width: $mobile-breakpoint) {
+        .pageTitle {
+            grid-area: title;
+            font-size: clamp(1.2rem, 5vw, 2.4rem);
             text-align: center;
-        }
-
-        ul {
             margin: 0;
-            padding: 0;
         }
 
-        li {
-            list-style: none;
-        }
-    }
+        .legalLinks {
+            grid-area: legal;
 
-    .socialLinks {
-        grid-area: social;
-        text-align: right;
+            @media only screen and (max-width: $mobile-breakpoint) {
+                text-align: center;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+            }
+        }
+
+        .socialLinks {
+            grid-area: social;
+            text-align: right;
+
+            @media only screen and (max-width: $mobile-breakpoint) {
+                text-align: center;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+            }
+        }
+
+        .copyright {
+            grid-area: copyright;
+
+            @media only screen and (max-width: $mobile-breakpoint) {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 'title title' 'legal social' 'copyright copyright';
+        }
 
         @media only screen and (max-width: $mobile-breakpoint) {
-            text-align: center;
+            grid-template-columns: 1fr;
+            grid-template-areas: 'title' 'legal' 'social' 'copyright';
         }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            list-style: none;
-        }
-    }
-
-    .copyright {
-        grid-area: copyright;
-
-        @media only screen and (max-width: $mobile-breakpoint) {
-            text-align: center;
-        }
-    }
-
-    @media only screen and (max-width: 900px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 'title title' 'legal social' 'copyright copyright';
-    }
-
-    @media only screen and (max-width: $mobile-breakpoint) {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'title' 'legal' 'social' 'copyright';
     }
 }

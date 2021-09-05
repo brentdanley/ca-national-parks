@@ -14,7 +14,7 @@
         grid-area: 1/1/-1/-1;
         align-self: center;
         justify-self: center;
-        color: white;
+        color: var(--light-primary-color);
         font-size: clamp(1rem, 4vw, 4rem);
         background: hsla(0, 0%, 0%, 0.4);
         text-align: center;

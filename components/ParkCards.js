@@ -14,10 +14,13 @@ const ParkCards = () => {
     }, [])
 
     return (
-        <section className={styles.wrapper}>
-            {
-                parks.map(park => <SingleCard park={park} key={park.id} /> )
-            }
+        <section className={styles.cards}>
+            <div className={styles.contentWrapper}>
+                <h3 className={styles.title}>The Parks</h3>
+                {
+                    parks.map(park => <SingleCard park={park} key={park.id} /> )
+                }
+            </div>
         </section>
     )
 }

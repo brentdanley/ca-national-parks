@@ -3,7 +3,7 @@ import YosemitePic from '../images/yosemite.jpg'
 import styles from '../styles/hero.module.scss'
 
 const Hero = () => (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
         <Image 
             src={ YosemitePic }
             alt='Yosemite by Aniket Deole'
@@ -13,7 +13,7 @@ const Hero = () => (
             objectFit='cover'
         />
         <h2 className={styles.title}>Welcome to California&apos;s National Parks</h2>
-    </div>
+    </section>
 )
 
 export default Hero
