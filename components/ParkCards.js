@@ -15,8 +15,8 @@ const ParkCards = () => {
 
     return (
         <section className={styles.cards}>
+            <h3 className={styles.title}>The Parks</h3>
             <div className={styles.contentWrapper}>
-                <h3 className={styles.title}>The Parks</h3>
                 {
                     parks.map(park => <SingleCard park={park} key={park.id} /> )
                 }
