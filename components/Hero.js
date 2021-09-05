@@ -13,7 +13,7 @@ const Hero = () => (
             placeholder='blur'
             objectFit='cover'
         />
-        <h2 className={styles.title}>Welcome to California's National Parks</h2>
+        <h2 className={styles.title}>Welcome to California&apos;s National Parks</h2>
     </div>
 )
 
