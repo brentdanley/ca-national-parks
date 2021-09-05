@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AirTank - Coding project for prospective front-end developers
 
-## Getting Started
+The front-end team at AirTank would like to get a better picture of your coding and problem solving skills. To do that, we would like for you to create a single web page. Keep the following in mind:
 
-First, run the development server:
+- Your future peers will be reviewing your submission, so write it appropriately and follow best practices. 
+- We've given a lot of latitude on design decisions. However, our primary focus of the evaluation will be your code.
+- This single page should be responsive and look good on viewports ranging from narrow phone displays to wide desktop monitors. 
+- You can assume the latest browsers. 
+- No more than four cards in each row
+- Include at least one external font
+- Use Sass with partials for header, hero, cards, and footer
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Description
+Create a single webpage that displays the first 12 national parks in California from the [National Park Service API](https://www.nps.gov/subjects/developer/api-documentation.htm#/parks/getPark). 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Page features
+1. Header with logo
+2. Hero section with background image and page title
+3. Grid of cards, one for each of the national parks returned from the API 
+4. Footer
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Park card grid
+Display each park in a card format with the following information:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Name of the park
+- Park description (you may truncate)
+- Image
+- GPS coordinates in the format "43.496 N 70.449 W"
+- First three activities listed
+- Link to park page on NPS website
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Footer
+The footer consists of four sections: copyright year, legal links (privacy policy, term and conditions), page title, and social links. You can have the links point to wherever you want. The sections should be laid out on wide viewports with the legal links on the left with copyright year just below them, page title centered at the top, and social links right aligned on the right side. On narrow viewports everything should be centered and stacked from top to bottom: page title, legal links, social links, copyright year.
 
-## Learn More
+## Deliverables
+When you've completed the project, push all files to a GitHub repository and send us a link. 
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Have fun! These are the elements we'd like to see. However, feel free to add additional features you feel would demonstrate your skills and set you apart.
