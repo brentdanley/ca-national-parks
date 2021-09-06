@@ -60,7 +60,7 @@ const Footer = () => {
                     <ul>
                     {
                         socialLinks.map(link => 
-                            <li key={link.url}><a href={link.url}><FontAwesomeIcon icon={link.icon} /> {link.label}</a></li>
+                            <li key={link.url}><a href={link.url}><FontAwesomeIcon icon={link.icon} /><span className={styles.socialLabel}>{link.label}</span></a></li>
                         )
                     }
                     </ul>
