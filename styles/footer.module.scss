@@ -56,7 +56,7 @@
 
                 a {
                     display: flex;
-                    gap: 0.5em;
+                    // gap: 0.5em;
                     justify-content: flex-end;
 
                     @media only screen and (max-width: $mobile-breakpoint) {
