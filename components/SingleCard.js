@@ -27,7 +27,7 @@ const SingleCard = ({ park }) => {
         }
         console.log(activities.length)
         if (park.activities.length - 3 > 0) {
-            return `${activities.join(', ')} and ${park.activities.length - 3} other activities.`
+            return `${activities.join(', ')} and ${park.activities.length - 3} other ${park.activities.length - 3 === 1 ? 'activity.' : 'activities.'}`
         }
         return activities.join(', ')
     }
