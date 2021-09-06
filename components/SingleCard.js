@@ -20,11 +20,17 @@ const SingleCard = ({ park }) => {
         )
     }
 
-    const activities = []
-    for (var i = 0; i < park.activities.length && i < 3; i++) {
-        activities.push(park.activities[i].name)
+    const formatActivities = () => {
+        const activities = []
+        for (var i = 0; i < park.activities.length && i < 3; i++) {
+            activities.push(park.activities[i].name)
+        }
+        console.log(activities.length)
+        if (park.activities.length - 3 > 0) {
+            return `${activities.join(', ')} and ${park.activities.length - 3} other activities.`
+        }
+        return activities.join(', ')
     }
-    console.log(activities)
 
     return (
         <article className={styles.card} style={{backgroundImage: `url(${park.images[0].url})`}}>
@@ -34,7 +40,7 @@ const SingleCard = ({ park }) => {
                 <p className={styles.coords}><FontAwesomeIcon icon={faMapMarkedAlt} /> {formatLatitude(park.latitude)} {formatLongitude(park.longitude)}</p>
                 <div className={styles.activities}>
                     <h5 className={styles.title}>Activities</h5>
-                    <p className={styles.activityList}>{activities.join(', ')}</p>
+                    <p className={styles.activityList}>{formatActivities()}</p>
                 </div>
                 <a className={styles.npsLink} href={park.url} title={`Read more about ${park.name} on NPS.gov`}>Read more at NPS.gov <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
             </div>
