@@ -25,7 +25,6 @@ const SingleCard = ({ park }) => {
         for (var i = 0; i < park.activities.length && i < 3; i++) {
             activities.push(park.activities[i].name)
         }
-        console.log(activities.length)
         if (park.activities.length - 3 > 0) {
             return `${activities.join(', ')} and ${park.activities.length - 3} other ${park.activities.length - 3 === 1 ? 'activity.' : 'activities.'}`
         }
